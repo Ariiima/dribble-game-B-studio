@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="m-0">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <script src="https://cdn.tailwindcss.com"></script>
+	<script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="input.css">
+	<script>
+		tailwind.config = {
+		  content: ["index.html"],
+		  theme: {
+		    extend: {
+		      backgroundImage: {
+		        'button-p': "url('./dist/buttonB.svg')",      }
+		    },
+		  },
+		  plugins: [],
+		}
+
+	</script>
+	<title>Games</title>
+</head>
+<body class="bg-gradient-to-b to-blue-500 from-blue-700 bg-no-repeat bg-cover h-full">
+	<div class="flex flex-col">
+		
+		<nav class="mt-8 mr-[10rem] flex space-x-3 justify-end">
+	 	
+			<button class="bg-transparent text-[#fbeb5c] rounded-full py-3 px-6 border-[#fbeb5c] font-semibold border-[3px]  hover:drop-shadow">
+				Home
+			</button>
+			<button class="bg-transparent text-white hover:text-[#fbeb5c] rounded-full py-3 px-6 border-transparent border-[3px] font-semibold hover:border-[#fbeb5c] hover:drop-shadow">
+				Portfolio
+			</button>
+			<button class="bg-transparent text-white hover:text-[#fbeb5c] rounded-full py-3 px-6 border-transparent border-[3px] font-semibold hover:border-[#fbeb5c] hover:drop-shadow">
+				Awards
+			</button>
+			<button class="bg-transparent text-white hover:text-[#fbeb5c] rounded-full py-3 px-6 font-semibold border-transparent border-[3px] hover:border-[#fbeb5c] hover:drop-shadow">
+				Reviews
+			</button>
+			<button class="bg-transparent text-white hover:text-[#fbeb5c] rounded-full py-3 px-6 font-semibold border-transparent border-[3px] hover:border-[#fbeb5c] hover:drop-shadow">
+				Our Team
+			</button>
+	 	</nav>
+	 	<div class="ml-[43rem] mt-[15rem]">
+	 		<h1 class="text-white text-6xl font-extrabold drop-shadow-md leading-[5rem]">
+	 		The Mightiest Mobile Games</h1>
+	 		<button class="bg-button-p bg-cover py-5 px-8 pr-[5rem] font-extrabold rounded-[15px] text-[#e85241] drop-shadow-lg mt-8 hover:-translate-y-1 transition text-left bg-center duration-300 scale-90">DOWNLOAD</button>
+	 	</div>
+	 	<div class="flex justify-center my-[14rem] space-x-3">
+	 		<div class="flex flex-col bg-[#2050d6] w-[14rem] h-[26rem] rounded-[30px] transition-all duration-[250ms] hover:h-[35rem] hover:-translate-y-[4rem] hover:drop-shadow-lg hover:bg-gradient-to-t from-green-300 to-blue-500 p-6 space-y-2 text-white ease-in-out"   
+	 		x-data="{ mouseOver: false }" @mouseover=" mouseOver = true " @mouseout=" mouseOver = false " 
+	 		:class=" mouseOver ? 'pt-[20rem]' : '' ">
+		 		<h2 class=" font-semibold text-xl pb-6" :class=" mouseOver ? 'text-base text-white ' : 'text-yellow-400' ">01</h2>
+		 		<span class=" h-[3px] rounded-full transition duration-300 ml-1" :class=" mouseOver ? 'fixed bottom-[13rem] w-[20px] bg-yellow-400 ml-0 ' : 'bg-white/25 w-[20px] ' "></span>
+		 		<h2 class=" font-extrabold" :class=" mouseOver ? 'text-4xl' : 'text-xl' ">Space Quest</h2>
+		 		<h3 :class=" mouseOver && 'invisible'" class="text-gray-200">IOS GAME</h3>
+		 		<div class="rounded-[30px] w-[10rem] h-[9rem] bg-gradient-to-t from-green-300 to-blue-500 mx-auto mt-10" :class=" mouseOver && 'invisible' ">
+		 		</div>
+		 		<h3 :class=" mouseOver && 'invisible'" class="text-gray-200 font-semibold">msstts riesntrs irtsr</h3>
+		 		<button class="bg-button-p text-base bg-cover py-4 px-6 pr-[3rem] font-extrabold rounded-[15px] text-[#e85241] drop-shadow-lg scale-[1] hover:-translate-y-1 " :class=" mouseOver ? 'fixed bottom-6 transition duration-[300ms]' : 'invisible' ">Case Study</button>
+	 		</div>
+	 		<div class="flex flex-col bg-[#2050d6] w-[14rem] h-[26rem] rounded-[30px] transition-all duration-[250ms] hover:h-[35rem] hover:-translate-y-[4rem] hover:drop-shadow-lg hover:bg-gradient-to-t from-red-400 to-blue-500 p-6 space-y-2 text-white ease-in-out"   
+	 		x-data="{ mouseOver: false }" @mouseover=" mouseOver = true " @mouseout=" mouseOver = false " 
+	 		:class=" mouseOver ? 'pt-[20rem]' : '' ">
+		 		<h2 class=" font-semibold text-xl pb-6" :class=" mouseOver ? 'text-base text-white ' : 'text-yellow-400' ">02</h2>
+		 		<span class=" h-[3px] rounded-full transition duration-300 ml-1" :class=" mouseOver ? 'fixed bottom-[13rem] w-[20px] bg-yellow-400 ml-0 ' : 'bg-white/25 w-[20px] ' "></span>
+		 		<h2 class=" font-extrabold" :class=" mouseOver ? 'text-4xl' : 'text-xl' ">3D Arcade</h2>
+		 		<h3 :class=" mouseOver && 'invisible'" class="text-gray-200">IOS GAME</h3>
+		 		<div class="rounded-[30px] w-[10rem] h-[9rem] bg-gradient-to-t from-red-400 to-blue-500 mx-auto mt-10" :class=" mouseOver && 'invisible' ">
+		 		</div>
+		 		<h3 :class=" mouseOver && 'invisible'" class="text-gray-200 font-semibold">msstts riesntrs irtsr</h3>
+		 		<button class="bg-button-p text-base bg-cover py-4 px-6 pr-[3rem] font-extrabold rounded-[15px] text-[#e85241] drop-shadow-lg scale-[1] hover:-translate-y-1 " :class=" mouseOver ? 'fixed bottom-6 transition duration-[300ms]' : 'invisible' ">Case Study</button>
+	 		</div>
+	 		<div class="flex flex-col bg-[#2050d6] w-[14rem] h-[26rem] rounded-[30px] transition-all duration-[250ms] hover:h-[35rem] hover:-translate-y-[4rem] hover:drop-shadow-lg hover:bg-gradient-to-t from-yellow-300 to-blue-500 p-6 space-y-2 text-white ease-in-out"   
+	 		x-data="{ mouseOver: false }" @mouseover=" mouseOver = true " @mouseout=" mouseOver = false " 
+	 		:class=" mouseOver ? 'pt-[20rem]' : '' ">
+		 		<h2 class=" font-semibold text-xl pb-6" :class=" mouseOver ? 'text-base text-white ' : 'text-yellow-400' ">03</h2>
+		 		<span class=" h-[3px] rounded-full transition duration-300 ml-1" :class=" mouseOver ? 'fixed bottom-[13rem] w-[20px] bg-yellow-400 ml-0 ' : 'bg-white/25 w-[20px] ' "></span>
+		 		<h2 class=" font-extrabold" :class=" mouseOver ? 'text-4xl' : 'text-xl' ">Rosso</h2>
+		 		<h3 :class=" mouseOver && 'invisible'" class="text-gray-200 uppercase">Playing cards</h3>
+		 		<div class="rounded-[30px] w-[10rem] h-[9rem] bg-gradient-to-t from-yellow-300 to-blue-500 mx-auto mt-10" :class=" mouseOver && 'invisible' ">
+		 		</div>
+		 		<h3 :class=" mouseOver && 'invisible'" class="text-gray-200 font-semibold">msstts riesntrs irtsr</h3>
+		 		<button class="bg-button-p text-base bg-cover py-4 px-6 pr-[3rem] font-extrabold rounded-[15px] text-[#e85241] drop-shadow-lg scale-[1] hover:-translate-y-1 " :class=" mouseOver ? 'fixed bottom-6 transition duration-[300ms]' : 'invisible' ">Case Study</button>
+	 		</div>
+	 		<div class="flex flex-col bg-[#2050d6] w-[14rem] h-[26rem] rounded-[30px] transition-all duration-[250ms] hover:h-[35rem] hover:-translate-y-[4rem] hover:drop-shadow-lg hover:bg-gradient-to-t from-purple-700 to-blue-500 p-6 space-y-2 text-white ease-in-out"   
+	 		x-data="{ mouseOver: false }" @mouseover=" mouseOver = true " @mouseout=" mouseOver = false " 
+	 		:class=" mouseOver ? 'pt-[20rem]' : '' ">
+		 		<h2 class=" font-semibold text-xl pb-6" :class=" mouseOver ? 'text-base text-white ' : 'text-yellow-400' ">04</h2>
+		 		<span class=" h-[3px] rounded-full transition duration-300 ml-1" :class=" mouseOver ? 'fixed bottom-[13rem] w-[20px] bg-yellow-400 ml-0 ' : 'bg-white/25 w-[20px] ' "></span>
+		 		<h2 class=" font-extrabold" :class=" mouseOver ? 'text-4xl' : 'text-xl' ">Bird Island</h2>
+		 		<h3 :class=" mouseOver && 'invisible'" class="text-gray-200 uppercase">talbetop extension</h3>
+		 		<div class="rounded-[30px] w-[10rem] h-[9rem] bg-gradient-to-t from-purple-700 to-blue-500 mx-auto mt-10" :class=" mouseOver && 'invisible' ">
+		 		</div>
+		 		<h3 :class=" mouseOver && 'invisible'" class="text-gray-200 font-semibold">msstts riesntrs irtsr</h3>
+		 		<button class="bg-button-p text-base bg-cover py-4 px-6 pr-[3rem] font-extrabold rounded-[15px] text-[#e85241] drop-shadow-lg scale-[1] hover:-translate-y-1 " :class=" mouseOver ? 'fixed bottom-6 transition duration-[300ms]' : 'invisible' ">Case Study</button>
+	 		</div>
+	 	</div>
+	</div>
+
+</body>
+</html>
